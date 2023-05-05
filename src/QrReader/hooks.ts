@@ -47,5 +47,5 @@ export const useQrReader: UseQrReaderHook = ({
     return () => {
       controlsRef.current?.stop();
     };
-  }, []);
+  }, [delayBetweenScanAttempts, video, videoId, onResult]);
 };
